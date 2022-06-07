@@ -23,14 +23,7 @@ public class UserController {
 
     @PostMapping("login")
     public ResponseEntity<Object> getUser(@RequestBody UserIdentity userId) {
-        try {
-            return ResponseEntity.ok(userService.loginUser(userId));
-        }
-        catch (UserLoginFailedException e){
-            return exceptionHandler.handleLoginException(e);
-
-        }
-
+        return ResponseEntity.ok(userService.loginUser(userId));
     }
 
     @PostMapping
