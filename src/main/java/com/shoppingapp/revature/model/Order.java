@@ -1,8 +1,6 @@
 package com.shoppingapp.revature.model;
 
 import javax.persistence.*;
-import java.util.List;
-
 
 @Entity
 @Table(name = "ORDERS")
